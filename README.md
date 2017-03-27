@@ -36,14 +36,14 @@ TypeCoverをSurfaceから取り外し、接着面の右端に薄く小さく印�
 ```
 uname -r
 ```
-.. 4.4.0-xx-generic となっていることを確認する。xxの部分は任意の数字に置き換える。
+...4.4.0-xx-generic となっていることを確認する。xxの部分は任意の数字に置き換える。
 
 1. aptソースレポジトリの有効化
 
 ```
 sudo vi /etc/apt/sources.list
 ```
-... xenial-updatesのコメントアウトを外す。
+...xenial-updatesのコメントアウトを外す。
 ```
   (before)
   # deb-src http://jp.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
@@ -123,7 +123,7 @@ sudo dpkg -i linux-image-*.deb linux-headers-*.deb
 ```
 ls -l /boot/
 ```
-.. ※initrd.img-4.4.0-xx-genericが存在することを確認する。
+... ※initrd.img-4.4.0-xx-genericが存在することを確認する。
 
 
 11. Grub更新
