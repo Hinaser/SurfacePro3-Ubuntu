@@ -16,7 +16,7 @@ TypeCoverをSurfaceから取り外し、接着面の右端に薄く小さく印�
 - Surface Pro 3にOSとしてUbuntu 16.04 (https://www.ubuntu.com/download/desktop)がインストールされている。 
 - Ubuntuのkernelバージョンが4.4.0である。
 - Ubuntuインストール直後である。
-- /tmpに20GBほどの空き容量がある。
+- /tmpに15GBほどの空き容量がある。
 
 ここではSurface Pro 3にUbuntuをインストールする方法については書きません。  
 インストール手順については下記のサイトを参考にしてください。
@@ -82,8 +82,8 @@ git clone https://github.com/Hinaser/SurfacePro3-Ubuntu
 ```
 cd linux-4.4.0
 chmod -R u+x debian/scripts/*
-fameroot debian/rules distclean
-fameroot debian/rules debian/control
+fakeroot debian/rules distclean
+fakeroot debian/rules debian/control
 cp debian.master/changelog debian/
 ```
 
